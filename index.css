@@ -1,0 +1,141 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+  /* Typography and fonts */
+  --fs-product-names: 16px;
+  --ff: "Red Hat Text";
+  --fw-small: 400;
+  --fw-medium: 600;
+  --fw-big: 700;
+}
+
+.wrapper {
+  /* height: 100vh; */
+  padding: 4rem;
+  position: relative;
+  border: 11px solid black;
+  background-color: var(--rose-50);
+}
+.grid-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 2rem; */
+  /* padding-left: 2rem; */
+  grid-gap: 1rem;
+}
+section {
+  /* border: 1px solid black; */
+}
+.image {
+  width: 15rem;
+  /* height: 15rem; */
+  /* aspect-ratio: 1/1; */
+  /* border: 1px solid black; */
+  position: relative;
+  margin-bottom: 1.5rem;
+  /* overflow: hidden; */
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  display: block;
+  height: 100%;
+}
+.btn {
+  position: absolute;
+  padding: 0.6rem 1.4rem;
+  border-radius: 5rem;
+  top: 13rem;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+section h2 {
+  font-size: 13px;
+  color: var(--rose-300);
+}
+.description {
+  font-size: 14px;
+  color: var(--rose-900);
+  padding: 0.2rem 0;
+}
+.price {
+  font-size: 13px;
+  color: var(--red);
+}
+.cart-list {
+  /* display: inline-block; */
+  display: none;
+  border: 1px solid black;
+  padding: 1.5rem 5rem 1.5rem 1rem;
+  position: absolute;
+  top: 7rem;
+  right: 10rem;
+  background-color: white;
+}
+.num-of-items-selected {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--red);
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.empty-cart {
+  margin-left: 4rem;
+}
+.items-added {
+  color: var(--rose-500);
+  font-size: 14px;
+}
+
+.quantity-container {
+  width: 9rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red);
+  border-radius: 1.5rem;
+  border: 3px solid black;
+}
+/* .increment-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+} */
+ .increment-icon,
+.decrement-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  background-color: black;
+  /* color: white; */
+}
+
+.js-add-to-cart{
+  display:none;
+  /* visibility: hidden; */
+}
